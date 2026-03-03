@@ -51,6 +51,7 @@ namespace Guardian_BD_beta
                                 resp = false;
                                 MessageBox.Show("El nombre de usuario ya se encuentra registrado por otra persona", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                                 Error.SetError(nom, "Nombre de Usuario duplicado");
+                                break;
                             }
                             else
                             {
