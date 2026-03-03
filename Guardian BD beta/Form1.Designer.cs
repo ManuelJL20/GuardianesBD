@@ -54,9 +54,9 @@ namespace Guardian_BD_beta
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(693, 12);
+            this.label6.Location = new System.Drawing.Point(562, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(362, 29);
+            this.label6.Size = new System.Drawing.Size(293, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "GUARDIAN IDENTIFIQUESE";
             // 
@@ -65,9 +65,9 @@ namespace Guardian_BD_beta
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(476, 461);
+            this.label7.Location = new System.Drawing.Point(345, 441);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 29);
+            this.label7.Size = new System.Drawing.Size(169, 25);
             this.label7.TabIndex = 1;
             this.label7.Text = "CONTRASEÑA:";
             // 
@@ -76,9 +76,9 @@ namespace Guardian_BD_beta
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(476, 379);
+            this.label8.Location = new System.Drawing.Point(345, 359);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(141, 29);
+            this.label8.Size = new System.Drawing.Size(116, 25);
             this.label8.TabIndex = 2;
             this.label8.Text = "USUARIO:";
             // 
@@ -87,9 +87,9 @@ namespace Guardian_BD_beta
             this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(397, 660);
+            this.label9.Location = new System.Drawing.Point(266, 640);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(284, 29);
+            this.label9.Size = new System.Drawing.Size(230, 25);
             this.label9.TabIndex = 3;
             this.label9.Text = "ESCRIBE EL CÓDIGO";
             // 
@@ -98,9 +98,9 @@ namespace Guardian_BD_beta
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(749, 551);
+            this.label10.Location = new System.Drawing.Point(618, 531);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(140, 29);
+            this.label10.Size = new System.Drawing.Size(117, 25);
             this.label10.TabIndex = 4;
             this.label10.Text = "CAPTCHA";
             // 
@@ -108,7 +108,7 @@ namespace Guardian_BD_beta
             // 
             this.Captcha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Captcha.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Captcha.Location = new System.Drawing.Point(709, 592);
+            this.Captcha.Location = new System.Drawing.Point(578, 572);
             this.Captcha.Name = "Captcha";
             this.Captcha.Size = new System.Drawing.Size(295, 29);
             this.Captcha.TabIndex = 5;
@@ -119,9 +119,9 @@ namespace Guardian_BD_beta
             // 
             this.Usuario1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Usuario1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usuario1.Location = new System.Drawing.Point(687, 379);
+            this.Usuario1.Location = new System.Drawing.Point(556, 359);
             this.Usuario1.Name = "Usuario1";
-            this.Usuario1.Size = new System.Drawing.Size(294, 36);
+            this.Usuario1.Size = new System.Drawing.Size(294, 30);
             this.Usuario1.TabIndex = 6;
             this.Usuario1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Usuario1_KeyPress);
             // 
@@ -129,10 +129,10 @@ namespace Guardian_BD_beta
             // 
             this.Contraseña.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Contraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Contraseña.Location = new System.Drawing.Point(687, 458);
+            this.Contraseña.Location = new System.Drawing.Point(556, 438);
             this.Contraseña.Name = "Contraseña";
             this.Contraseña.PasswordChar = '*';
-            this.Contraseña.Size = new System.Drawing.Size(294, 36);
+            this.Contraseña.Size = new System.Drawing.Size(294, 30);
             this.Contraseña.TabIndex = 7;
             this.Contraseña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Contraseña_KeyPress_1);
             // 
@@ -140,9 +140,9 @@ namespace Guardian_BD_beta
             // 
             this.CaptchaUs.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CaptchaUs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CaptchaUs.Location = new System.Drawing.Point(687, 657);
+            this.CaptchaUs.Location = new System.Drawing.Point(556, 637);
             this.CaptchaUs.Name = "CaptchaUs";
-            this.CaptchaUs.Size = new System.Drawing.Size(294, 36);
+            this.CaptchaUs.Size = new System.Drawing.Size(294, 30);
             this.CaptchaUs.TabIndex = 8;
             this.CaptchaUs.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CaptchaUs_KeyPress_1);
             // 
@@ -163,7 +163,7 @@ namespace Guardian_BD_beta
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Gold;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(1406, 760);
+            this.button4.Location = new System.Drawing.Point(1143, 720);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(231, 56);
             this.button4.TabIndex = 10;
@@ -176,7 +176,7 @@ namespace Guardian_BD_beta
             this.Generar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Generar.BackColor = System.Drawing.Color.Orange;
             this.Generar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Generar.Location = new System.Drawing.Point(481, 578);
+            this.Generar.Location = new System.Drawing.Point(350, 558);
             this.Generar.Name = "Generar";
             this.Generar.Size = new System.Drawing.Size(180, 56);
             this.Generar.TabIndex = 11;
@@ -200,7 +200,7 @@ namespace Guardian_BD_beta
             this.tipo.FormattingEnabled = true;
             this.tipo.Location = new System.Drawing.Point(1152, 444);
             this.tipo.Name = "tipo";
-            this.tipo.Size = new System.Drawing.Size(121, 24);
+            this.tipo.Size = new System.Drawing.Size(121, 21);
             this.tipo.TabIndex = 13;
             this.tipo.Visible = false;
             // 
@@ -208,7 +208,7 @@ namespace Guardian_BD_beta
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Guardian_BD_beta.Properties.Resources.LOGO_FG_rediseño_008;
-            this.pictureBox2.Location = new System.Drawing.Point(687, 55);
+            this.pictureBox2.Location = new System.Drawing.Point(556, 35);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(294, 285);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +221,7 @@ namespace Guardian_BD_beta
             this.button3.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(12, 760);
+            this.button3.Location = new System.Drawing.Point(12, 720);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(226, 56);
             this.button3.TabIndex = 15;
@@ -231,7 +231,7 @@ namespace Guardian_BD_beta
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(1649, 828);
+            this.ClientSize = new System.Drawing.Size(1386, 788);
             this.ControlBox = false;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox2);

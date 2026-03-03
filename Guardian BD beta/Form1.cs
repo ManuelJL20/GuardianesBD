@@ -141,6 +141,13 @@ namespace Guardian_BD_beta
 
         private void button4_Click(object sender, EventArgs e)
         {
+            // CORRECCIÓN: Validar que los campos no estén vacíos antes de hacer cualquier cosa
+            if (string.IsNullOrWhiteSpace(Usuario1.Text) || string.IsNullOrWhiteSpace(Contraseña.Text) || string.IsNullOrWhiteSpace(CaptchaUs.Text))
+            {
+                MessageBox.Show("Campos obligatorios. Por favor, llene todos los espacios antes de ingresar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // El return detiene la ejecución aquí mismo
+            }
+
             conexion.Open();
             string consulta1 = "select u.Tipo_usuario from Usuario u where u.Contraseña = '" + Contraseña.Text + "' and u.Nombre = '" + Usuario1.Text + "'";
             SqlCommand comando1 = new SqlCommand(consulta1, conexion);
@@ -155,10 +162,7 @@ namespace Guardian_BD_beta
                 Form2 Obj = new Form2(Usuario1.Text, tipo.Text);
                 Obj.ShowDialog();
             }
-
-
             else
-
                 MessageBox.Show("Usuario o Contraseña o CaptCha incorrecto, intente nuevamente");
         }
 
@@ -169,28 +173,35 @@ namespace Guardian_BD_beta
 
         private void CaptchaUs_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            conexion.Open();
-            string consulta1 = "select u.Tipo_usuario from Usuario u where u.Contraseña = '" + Contraseña.Text + "' and u.Nombre = '" + Usuario1.Text + "'";
-            SqlCommand comando1 = new SqlCommand(consulta1, conexion);
-            SqlDataReader lector1 = comando1.ExecuteReader();
-            while (lector1.Read())
-            {
-                tipo.Text = lector1.GetString(0);
-            }
-            conexion.Close();
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
-                if (Jarvis())
+            {
+                // CORRECCIÓN: Validar que los campos no estén vacíos también al presionar Enter
+                if (string.IsNullOrWhiteSpace(Usuario1.Text) || string.IsNullOrWhiteSpace(Contraseña.Text) || string.IsNullOrWhiteSpace(CaptchaUs.Text))
+                {
+                    MessageBox.Show("Campos obligatorios. Por favor, llene todos los espacios antes de ingresar.", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                conexion.Open();
+                string consulta1 = "select u.Tipo_usuario from Usuario u where u.Contraseña = '" + Contraseña.Text + "' and u.Nombre = '" + Usuario1.Text + "'";
+                SqlCommand comando1 = new SqlCommand(consulta1, conexion);
+                SqlDataReader lector1 = comando1.ExecuteReader();
+                while (lector1.Read())
+                {
+                    tipo.Text = lector1.GetString(0);
+                }
+                conexion.Close();
+
+                if (Jarvis())
                 {
                     Form2 Obj = new Form2(Usuario1.Text, tipo.Text);
                     Obj.ShowDialog();
-
                 }
-
-
                 else
-
-                    MessageBox.Show("Usuario o Contraseña o CaptCha incorrecto, intente nuevamente");
+                {
+                    MessageBox.Show("Usuario o Contraseña o CaptCha incorrecto, intente de nuevo");
+                }
+            }
         }
 
         private void Generar_Click_1(object sender, EventArgs e)

@@ -45,19 +45,18 @@ namespace Guardian_BD_beta
 
                         for (int v = 0; v < dgv.Rows.Count - 1; v++)
                         {
-                            if (nom.Text == dgv.Rows[v].Cells[0].Value.ToString() || con.Text == dgv.Rows[v].Cells[1].Value.ToString())
+                            // CORRECCIÓN: Validamos el nombre, pero excluimos la fila que estamos editando (v != dgv.CurrentRow.Index)
+                            if (nom.Text == dgv.Rows[v].Cells[0].Value.ToString() && v != dgv.CurrentRow.Index)
                             {
                                 resp = false;
-                                MessageBox.Show("El nombre de usuario y/o contraseña ya están en uso", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                                Error.SetError(nom, "Nombre de Usuario no válido");
-                                Error.SetError(con, "Contraseña no válida");
-
+                                MessageBox.Show("El nombre de usuario ya se encuentra registrado por otra persona", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                                Error.SetError(nom, "Nombre de Usuario duplicado");
+                                break;
                             }
                             else
                             {
                                 Error.SetError(nom, "");
-                                Error.SetError(con, "");
-
+                                Error.SetError(con, ""); // Quitamos el error de contraseña porque sí se pueden repetir
                             }
 
 
